@@ -1,0 +1,148 @@
+.tree {
+    color: red;
+    &__branch {
+        position: absolute;
+        width: 6rem;
+        height: 15rem;
+        bottom: 49px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #b56a26;
+
+        &-2 {
+            position: absolute;
+            top: -25%;
+            border-width: 40px 30px;
+            border-color: transparent transparent #b56a26 #b56a26;
+            transform: rotate(-20deg);
+            border-radius: 10px;
+            border-style: solid;
+            left: -10%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -100%;
+                border-width: 10px 20px;
+                border-color: transparent transparent #b56a26 #b56a26;
+                transform: translate(-62%, -100%) rotate(-68deg);
+                border-radius: 5px;
+                border-style: solid;
+                left: -3%;
+            }
+
+            &-leaf {
+                top: 5% !important;
+                left: 0 !important;
+                transform: translate(-79%, -100%) !important;
+                box-shadow: 2px 3px 4px 3px #6e9c0a;
+
+                &::after {
+                    box-shadow: 0px 0px 2px #9dd22b;
+                }
+            }
+        }
+        &-3 {
+            position: absolute;
+            top: -25%;
+            z-index: -1;
+            border-width: 40px 30px;
+            border-color: transparent #b56a26 #b56a26 transparent;
+            transform: rotate(40deg);
+            border-radius: 10px;
+            border-style: solid;
+            right: -10%;
+
+            &-leaf {
+                top: 5% !important;
+                right: 0 !important;
+                transform: translate(-63%, -105%) rotate(-9deg) !important;
+                box-shadow: 2px 3px 4px 3px #b7eb48;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -100%;
+                border-width: 26px 43px;
+                border-color: transparent transparent #b56a26 #b56a26;
+                transform: translate(9%, -53%) rotate(-130deg);
+                border-radius: 29px;
+                border-style: solid;
+                right: -3%;
+            }
+        }
+
+        &-re {
+            position: absolute;
+            bottom: -9%;
+            left: -18%;
+            transform: rotate(53deg);
+            z-index: 2;
+            border-style: solid;
+            border-width: 20px 10px;
+            border-color: #b56a26 transparent transparent #b56a26;
+            border-radius: 4px;
+        }
+    }
+    &__leaf {
+        position: absolute;
+        top: -46%;
+        left: 35px;
+        z-index: 5;
+        background-color: #90b937;
+        width: 100px;
+        height: 50px;
+        transform: translate(4%, -23%) rotate(27deg);
+        border-radius: 50%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -40%;
+            background-color: #90b937;
+            width: 100px;
+            height: 40px;
+
+            top: 50%;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -40%;
+            background-color: #90b937;
+            width: 100px;
+            height: 40px;
+            top: 50%;
+
+            border-radius: 50%;
+        }
+    }
+    &__plan {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        border-radius: 50% 50% 0 0;
+        background-color: #90b937;
+    }
+}
+.box {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border: 1px solid #000;
+    margin-left: 10px;
+}
+
+.enim {
+    background-image: url("https://i.pinimg.com/originals/92/3a/21/923a2151ce624bd50199a6d77d418802.gif");
+    width: 500px;
+    animation-play-state: paused !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    transform: translateX(0);
+    transition: all ease 0.3s;
+}

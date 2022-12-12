@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mh-100vh {
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ant-modal-mask {
+  z-index: 999;
+}
+
+.ant-modal-header {
+  background-color: rgb(163, 78, 244);
+}
+.ant-drawer-header {
+  background-color: rgb(163, 78, 244);
+}
+
+.ant-modal-title {
+  font-size: 1.05rem;
+}
+#__next {
+  overflow: hidden;
+}
+#wheel {
+  color: red;
+  canvas {
+  }
+}

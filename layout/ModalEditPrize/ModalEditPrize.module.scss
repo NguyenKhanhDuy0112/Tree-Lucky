@@ -1,0 +1,27 @@
+.prize {
+    &__button {
+        background-color: rgb(163, 78, 244);
+        font-weight: 600;
+        color: #fff;
+        &:hover {
+            background-color: rgb(163, 78, 244);
+            color: #000;
+        }
+    }
+    &__item {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 0.3rem 1rem;
+        background-color: #f7f7f7;
+    }
+    &__delete {
+        cursor: pointer;
+        transform: scale(1);
+        transition: all ease 0.2s;
+
+        &:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+    }
+}

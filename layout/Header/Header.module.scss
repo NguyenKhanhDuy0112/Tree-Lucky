@@ -1,0 +1,17 @@
+.header {
+    height: 60px;
+    position: fixed;
+    left: 0;
+    background-color: #fed03c;
+    right: 0;
+    top: 0;
+
+    &__logo {
+        width: 3rem;
+    }
+    &__avatar {
+        width: 3rem;
+        border-radius: 50%;
+        height: 3rem;
+    }
+}

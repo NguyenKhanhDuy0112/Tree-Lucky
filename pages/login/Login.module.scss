@@ -1,0 +1,67 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        max-width: 400px;
+        min-width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 1.02rem;
+        &-register {
+            color: #e811fc !important;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        padding: 8px 20px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 30px;
+        background: linear-gradient(right, #00dbde, #fc00ff) !important;
+        background: -webkit-linear-gradient(right, #00dbde, #fc00ff) !important;
+        transition: all ease 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__input {
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+
+    &__label {
+        display: block;
+        font-size: 1.04rem !important;
+        font-weight: 400;
+        &.required {
+            &::after {
+                content: "*";
+                color: red;
+                margin-left: 3px;
+            }
+        }
+    }
+}
