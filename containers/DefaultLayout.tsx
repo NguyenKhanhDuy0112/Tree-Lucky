@@ -9,7 +9,7 @@ function DefaultLayout(props: DefaultLayoutProps) {
     const { children } = props
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <section className="main">
                 {children}
             </section>
